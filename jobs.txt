@@ -1,0 +1,115 @@
+--model staroc --chan both --twin twin_full --seed 0 --out runs/staroc_s0
+--model tlstm --chan raw --seed 0 --out runs/tlstm_s0
+--model cs --chan raw --seed 0 --out runs/cs_s0
+--model siam --chan raw --seed 0 --out runs/siam_s0
+--model staroc --chan both --twin twin_full --fusion concat --seed 0 --out runs/abl_concat_s0
+--model staroc --chan both --twin twin_full --temporal none --seed 0 --out runs/abl_notemporal_s0
+--model tlstm --chan both --twin twin_full --seed 0 --out runs/tlstm_twin_s0
+--model staroc --chan both --twin twin_full --seed 1 --out runs/staroc_s1
+--model tlstm --chan raw --seed 1 --out runs/tlstm_s1
+--model cs --chan raw --seed 1 --out runs/cs_s1
+--model siam --chan raw --seed 1 --out runs/siam_s1
+--model staroc --chan both --twin twin_full --fusion concat --seed 1 --out runs/abl_concat_s1
+--model staroc --chan both --twin twin_full --temporal none --seed 1 --out runs/abl_notemporal_s1
+--model tlstm --chan both --twin twin_full --seed 1 --out runs/tlstm_twin_s1
+--model staroc --chan both --twin twin_full --seed 2 --out runs/staroc_s2
+--model tlstm --chan raw --seed 2 --out runs/tlstm_s2
+--model cs --chan raw --seed 2 --out runs/cs_s2
+--model siam --chan raw --seed 2 --out runs/siam_s2
+--model staroc --chan both --twin twin_full --fusion concat --seed 2 --out runs/abl_concat_s2
+--model staroc --chan both --twin twin_full --temporal none --seed 2 --out runs/abl_notemporal_s2
+--model tlstm --chan both --twin twin_full --seed 2 --out runs/tlstm_twin_s2
+--model staroc --chan both --twin twin_full --seed 3 --out runs/staroc_s3
+--model tlstm --chan raw --seed 3 --out runs/tlstm_s3
+--model cs --chan raw --seed 3 --out runs/cs_s3
+--model siam --chan raw --seed 3 --out runs/siam_s3
+--model staroc --chan both --twin twin_full --fusion concat --seed 3 --out runs/abl_concat_s3
+--model staroc --chan both --twin twin_full --temporal none --seed 3 --out runs/abl_notemporal_s3
+--model tlstm --chan both --twin twin_full --seed 3 --out runs/tlstm_twin_s3
+--model staroc --chan both --twin twin_full --seed 4 --out runs/staroc_s4
+--model tlstm --chan raw --seed 4 --out runs/tlstm_s4
+--model cs --chan raw --seed 4 --out runs/cs_s4
+--model siam --chan raw --seed 4 --out runs/siam_s4
+--model staroc --chan both --twin twin_full --fusion concat --seed 4 --out runs/abl_concat_s4
+--model staroc --chan both --twin twin_full --temporal none --seed 4 --out runs/abl_notemporal_s4
+--model tlstm --chan both --twin twin_full --seed 4 --out runs/tlstm_twin_s4
+--model staroc --chan both --fusion concat --temporal none --twin twin_full --seed 0 --out runs/final_s0
+--model staroc --chan twin --fusion concat --temporal none --twin twin_full --seed 0 --out runs/ab_twinonly_s0
+--model staroc --chan both --fusion concat --temporal none --twin twin_nodrift --seed 0 --out runs/ab_nodrift_s0
+--model staroc --chan both --fusion concat --temporal none --twin twin_norobust --seed 0 --out runs/ab_norobust_s0
+--model staroc --chan both --fusion concat --temporal none --prep prep_none --twin twin_none --seed 0 --out runs/ab_noreg_s0
+--model staroc --chan both --fusion concat --temporal none --prep prep_moment --twin twin_moment --seed 0 --out runs/ab_moment_s0
+--model staroc --chan both --fusion concat --temporal none --prep prep_nonorm --twin twin_nonorm --seed 0 --out runs/ab_nonorm_s0
+--model staroc --chan both --fusion none --temporal none --twin twin_full --seed 0 --out runs/ab_nometa_s0
+--model staroc --chan both --fusion concat --temporal none --twin twin_full --no_time --seed 0 --out runs/ab_notime_s0
+--model staroc --chan both --fusion concat --temporal none --twin twin_full --enc polar --seed 0 --out runs/ab_polar_s0
+--model staroc --chan both --fusion concat --temporal none --twin twin_full --enc cnn --seed 0 --out runs/ab_cnn_s0
+--model staroc --chan both --fusion concat --temporal none --twin twin_full --seed 1 --out runs/final_s1
+--model staroc --chan twin --fusion concat --temporal none --twin twin_full --seed 1 --out runs/ab_twinonly_s1
+--model staroc --chan both --fusion concat --temporal none --twin twin_nodrift --seed 1 --out runs/ab_nodrift_s1
+--model staroc --chan both --fusion concat --temporal none --twin twin_norobust --seed 1 --out runs/ab_norobust_s1
+--model staroc --chan both --fusion concat --temporal none --prep prep_none --twin twin_none --seed 1 --out runs/ab_noreg_s1
+--model staroc --chan both --fusion concat --temporal none --prep prep_moment --twin twin_moment --seed 1 --out runs/ab_moment_s1
+--model staroc --chan both --fusion concat --temporal none --prep prep_nonorm --twin twin_nonorm --seed 1 --out runs/ab_nonorm_s1
+--model staroc --chan both --fusion none --temporal none --twin twin_full --seed 1 --out runs/ab_nometa_s1
+--model staroc --chan both --fusion concat --temporal none --twin twin_full --no_time --seed 1 --out runs/ab_notime_s1
+--model staroc --chan both --fusion concat --temporal none --twin twin_full --enc polar --seed 1 --out runs/ab_polar_s1
+--model staroc --chan both --fusion concat --temporal none --twin twin_full --enc cnn --seed 1 --out runs/ab_cnn_s1
+--model staroc --chan both --fusion concat --temporal none --twin twin_full --seed 2 --out runs/final_s2
+--model staroc --chan twin --fusion concat --temporal none --twin twin_full --seed 2 --out runs/ab_twinonly_s2
+--model staroc --chan both --fusion concat --temporal none --twin twin_nodrift --seed 2 --out runs/ab_nodrift_s2
+--model staroc --chan both --fusion concat --temporal none --twin twin_norobust --seed 2 --out runs/ab_norobust_s2
+--model staroc --chan both --fusion concat --temporal none --prep prep_none --twin twin_none --seed 2 --out runs/ab_noreg_s2
+--model staroc --chan both --fusion concat --temporal none --prep prep_moment --twin twin_moment --seed 2 --out runs/ab_moment_s2
+--model staroc --chan both --fusion concat --temporal none --prep prep_nonorm --twin twin_nonorm --seed 2 --out runs/ab_nonorm_s2
+--model staroc --chan both --fusion none --temporal none --twin twin_full --seed 2 --out runs/ab_nometa_s2
+--model staroc --chan both --fusion concat --temporal none --twin twin_full --no_time --seed 2 --out runs/ab_notime_s2
+--model staroc --chan both --fusion concat --temporal none --twin twin_full --enc polar --seed 2 --out runs/ab_polar_s2
+--model staroc --chan both --fusion concat --temporal none --twin twin_full --enc cnn --seed 2 --out runs/ab_cnn_s2
+--model staroc --chan both --fusion concat --temporal none --twin twin_full --seed 3 --out runs/final_s3
+--model staroc --chan twin --fusion concat --temporal none --twin twin_full --seed 3 --out runs/ab_twinonly_s3
+--model staroc --chan both --fusion concat --temporal none --twin twin_nodrift --seed 3 --out runs/ab_nodrift_s3
+--model staroc --chan both --fusion concat --temporal none --twin twin_norobust --seed 3 --out runs/ab_norobust_s3
+--model staroc --chan both --fusion concat --temporal none --prep prep_none --twin twin_none --seed 3 --out runs/ab_noreg_s3
+--model staroc --chan both --fusion concat --temporal none --prep prep_moment --twin twin_moment --seed 3 --out runs/ab_moment_s3
+--model staroc --chan both --fusion concat --temporal none --prep prep_nonorm --twin twin_nonorm --seed 3 --out runs/ab_nonorm_s3
+--model staroc --chan both --fusion none --temporal none --twin twin_full --seed 3 --out runs/ab_nometa_s3
+--model staroc --chan both --fusion concat --temporal none --twin twin_full --no_time --seed 3 --out runs/ab_notime_s3
+--model staroc --chan both --fusion concat --temporal none --twin twin_full --enc polar --seed 3 --out runs/ab_polar_s3
+--model staroc --chan both --fusion concat --temporal none --twin twin_full --enc cnn --seed 3 --out runs/ab_cnn_s3
+--model staroc --chan both --fusion concat --temporal none --twin twin_full --seed 4 --out runs/final_s4
+--model staroc --chan twin --fusion concat --temporal none --twin twin_full --seed 4 --out runs/ab_twinonly_s4
+--model staroc --chan both --fusion concat --temporal none --twin twin_nodrift --seed 4 --out runs/ab_nodrift_s4
+--model staroc --chan both --fusion concat --temporal none --twin twin_norobust --seed 4 --out runs/ab_norobust_s4
+--model staroc --chan both --fusion concat --temporal none --prep prep_none --twin twin_none --seed 4 --out runs/ab_noreg_s4
+--model staroc --chan both --fusion concat --temporal none --prep prep_moment --twin twin_moment --seed 4 --out runs/ab_moment_s4
+--model staroc --chan both --fusion concat --temporal none --prep prep_nonorm --twin twin_nonorm --seed 4 --out runs/ab_nonorm_s4
+--model staroc --chan both --fusion none --temporal none --twin twin_full --seed 4 --out runs/ab_nometa_s4
+--model staroc --chan both --fusion concat --temporal none --twin twin_full --no_time --seed 4 --out runs/ab_notime_s4
+--model staroc --chan both --fusion concat --temporal none --twin twin_full --enc polar --seed 4 --out runs/ab_polar_s4
+--model staroc --chan both --fusion concat --temporal none --twin twin_full --enc cnn --seed 4 --out runs/ab_cnn_s4
+--model staroc --chan raw --fusion concat --temporal none --seed 0 --out runs/ab_notwin_s0
+--model staroc --chan raw --fusion concat --temporal none --seed 1 --out runs/ab_notwin_s1
+--model staroc --chan raw --fusion concat --temporal none --seed 2 --out runs/ab_notwin_s2
+--model staroc --chan raw --fusion concat --temporal none --seed 3 --out runs/ab_notwin_s3
+--model staroc --chan raw --fusion concat --temporal none --seed 4 --out runs/ab_notwin_s4
+--model staroc --chan both --twin twin_full --fusion gated --temporal attn --seed 0 --cv_fold 0 --out runs_cv/gated_attn_f0
+--model staroc --chan both --twin twin_full --fusion gated --temporal none --seed 0 --cv_fold 0 --out runs_cv/gated_none_f0
+--model staroc --chan both --twin twin_full --fusion concat --temporal attn --seed 0 --cv_fold 0 --out runs_cv/concat_attn_f0
+--model staroc --chan both --twin twin_full --fusion concat --temporal none --seed 0 --cv_fold 0 --out runs_cv/concat_none_f0
+--model staroc --chan both --twin twin_full --fusion gated --temporal attn --seed 0 --cv_fold 1 --out runs_cv/gated_attn_f1
+--model staroc --chan both --twin twin_full --fusion gated --temporal none --seed 0 --cv_fold 1 --out runs_cv/gated_none_f1
+--model staroc --chan both --twin twin_full --fusion concat --temporal attn --seed 0 --cv_fold 1 --out runs_cv/concat_attn_f1
+--model staroc --chan both --twin twin_full --fusion concat --temporal none --seed 0 --cv_fold 1 --out runs_cv/concat_none_f1
+--model staroc --chan both --twin twin_full --fusion gated --temporal attn --seed 0 --cv_fold 2 --out runs_cv/gated_attn_f2
+--model staroc --chan both --twin twin_full --fusion gated --temporal none --seed 0 --cv_fold 2 --out runs_cv/gated_none_f2
+--model staroc --chan both --twin twin_full --fusion concat --temporal attn --seed 0 --cv_fold 2 --out runs_cv/concat_attn_f2
+--model staroc --chan both --twin twin_full --fusion concat --temporal none --seed 0 --cv_fold 2 --out runs_cv/concat_none_f2
+--model staroc --chan both --twin twin_full --fusion gated --temporal attn --seed 0 --cv_fold 3 --out runs_cv/gated_attn_f3
+--model staroc --chan both --twin twin_full --fusion gated --temporal none --seed 0 --cv_fold 3 --out runs_cv/gated_none_f3
+--model staroc --chan both --twin twin_full --fusion concat --temporal attn --seed 0 --cv_fold 3 --out runs_cv/concat_attn_f3
+--model staroc --chan both --twin twin_full --fusion concat --temporal none --seed 0 --cv_fold 3 --out runs_cv/concat_none_f3
+--model staroc --chan both --twin twin_full --fusion gated --temporal attn --seed 0 --cv_fold 4 --out runs_cv/gated_attn_f4
+--model staroc --chan both --twin twin_full --fusion gated --temporal none --seed 0 --cv_fold 4 --out runs_cv/gated_none_f4
+--model staroc --chan both --twin twin_full --fusion concat --temporal attn --seed 0 --cv_fold 4 --out runs_cv/concat_attn_f4
+--model staroc --chan both --twin twin_full --fusion concat --temporal none --seed 0 --cv_fold 4 --out runs_cv/concat_none_f4
